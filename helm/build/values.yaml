@@ -1,0 +1,15 @@
+app:
+  name: poi-gateway-app
+  namespace: ryanj
+  cluster: .apps.summit23.0x74.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/summit23devlab/ryanj-poi-gateway
+  org: summit23devlab
+  name: ryanj-poi-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: ryanj/poi-gateway-app
+  tag: latest
